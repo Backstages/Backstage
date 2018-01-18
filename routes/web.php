@@ -10,5 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+//后台首页登陆页面
+Route::get('/','LoginController@index');
 
-Route::get('/','Controller\LoginController@index');
+//登陆信息提交页面
+Route::post('/login','LoginController@login')->name('login');
