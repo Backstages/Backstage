@@ -11,6 +11,7 @@
                                 <p class="lead">Login to your account</p>
                             </div>
                             <form class="form-auth-small" action="{{route('login')}}" method="post">
+                                <input typt="hidden" name="_token" value="{{ csrf_token() }}"/>
                                 <div class="form-group">
                                     <label for="signin-email" class="control-label sr-only">用户名</label>
                                     <input type="text" class="form-control" id="signin-name" placeholder="Name">
